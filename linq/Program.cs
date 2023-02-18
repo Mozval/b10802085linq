@@ -16,7 +16,7 @@ namespace linq
         {   
 
 
-            var readText = File.ReadAllLines("product.csv").Skip(1).ToList();
+            var readText = File.ReadAllLines(@"..\..\..\product.csv").Skip(1).ToList();
            
             List<product> list = new List<product> { };
             foreach (var line in readText)
